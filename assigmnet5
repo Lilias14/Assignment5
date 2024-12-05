@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my website</h1>
+    </header>
+
+    <main>
+        <section class="column" id="html">
+            <h2>HTML</h2>
+            <ul>
+                <li><a href="exercise1.html">https://github.com/Lilias14/Assignment1 1</a></li>
+
+            </ul>
+        </section>
+
+        <section class="column" id="css">
+            <h2>CSS</h2>
+            <div class="example-div"></div>
+        </section>
+
+        <section class="column" id="javascript">
+            <h2>JavaScript</h2>
+        </section>
+
+        <section class="column" id="links">
+            <h2>Website links</h2>
+            <ul>
+                <li><a href="https://https://pmyuval.github.io/twist/twist.html">site course</a></li>
+                <li><a href="https://docs.google.com/presentation/d/1TwPwEhhoA0mNQAqD09Nb5h5-h7_qYBA1wvOK2flcSY8/edit#slide=id.g544ccec8db_0_0">tools for web interactive storytelling</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;my website</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+h1, h2 {
+    color: #4caf50;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    width: 22%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+    font-size: 1.5em;
+}
+
+#css .example-div {
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+    border: 5px solid #ff6347;
+    padding: 20px;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ffeb3b;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
