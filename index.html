@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to my website</h1>
+        <h1>Welcome to My Liliya's Website</h1>
     </header>
 
     <main>
         <section class="column" id="html">
             <h2>HTML</h2>
             <ul>
-                <li><a href="exercise1.html">https://github.com/Lilias14/Assignment1 1</a></li>
-
+			    <li><a href="https://lilias14.github.io/assignment2/dom.html/dom.html">מטלה 2 - חלק 1</a></li>
+                <li><a href="https://lilias14.github.io/assignment2/part2/story.html">מטלה 2 - חלק 2</a></li>
+				<li><a href="https://lilias14.github.io/assignment3/assignment3/videos.html">מטלה 3 - חלק 1</a></li>
+				<li><a href="https://lilias14.github.io/assignment3/part2/audio.html">מטלה 3 - חלק 2</a></li>
+				<li><a href="index.html">מטלה 4 - בוצע</a></li>
             </ul>
         </section>
 
@@ -30,80 +34,128 @@
         </section>
 
         <section class="column" id="links">
-            <h2>Website links</h2>
+            <h2>Website Links</h2>
             <ul>
-                <li><a href="https://https://pmyuval.github.io/twist/twist.html">site course</a></li>
-                <li><a href="https://docs.google.com/presentation/d/1TwPwEhhoA0mNQAqD09Nb5h5-h7_qYBA1wvOK2flcSY8/edit#slide=id.g544ccec8db_0_0">tools for web interactive storytelling</a></li>
+                <li><a href="http://tau.ac.il/~ehadas/twist/twist.html">Eran’s website</a></li>
+				<li><a href="https://pmyuval.github.io/twist/twist.html">Yuval’s Website</a></li>
+				<li><a href="https://github.com/pmyuval/pmyuval.github.io">Yuval’s Repository</a></li>
+				<li><a href="https://www.w3schools.com">W3schools</a></li>
+				<li><a href="https://github.com/Lilias14">Lilia’s GitHub</a></li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy;my website</p>
+        <p>December 2024</p>
     </footer>
 </body>
 </html>
+
+<style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
+    background-color: #181818;
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
-h1, h2 {
-    color: #4caf50;
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #ff8a65;
+    font-size: 3em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffcc80;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff8a65;
+    padding-bottom: 5px;
 }
 
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 20px;
+    gap: 20px;
 }
 
 .column {
-    width: 22%;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 24%;
+    background: linear-gradient(145deg, #222222, #1c1c1c);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 6px 6px 12px #0f0f0f, -6px -6px 12px #2a2a2a;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px #0f0f0f, -10px -10px 20px #2a2a2a;
 }
 
 .column h2 {
-    font-size: 1.5em;
+    text-align: center;
 }
 
 #css .example-div {
     width: 100%;
-    height: 100px;
-    background-color: lightblue;
-    border: 5px solid #ff6347;
-    padding: 20px;
+    height: 120px;
+    background: radial-gradient(circle, #ffcc80, #ffcc80);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.5), inset -4px -4px 6px rgba(255, 255, 255, 0.1);
 }
 
 a {
-    color: #007acc;
+    color: #ffcc80;
     text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff8a65;
+    transition: width 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
 }
 
 a:hover {
-    background-color: #ffeb3b;
-    padding: 5px;
-    border-radius: 4px;
+    color: #ff8a65;
 }
 
 footer {
-    background-color: #4caf50;
-    color: white;
+    background-color: #1c1c1c;
+    color: #ffcc80;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px 0;
+    font-size: 1em;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
 }
 
 header {
-    background-color: #4caf50;
-    color: white;
+    background: linear-gradient(90deg, #ff7043, #ff8a65);
+    color: #ffffff;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
+</style>
